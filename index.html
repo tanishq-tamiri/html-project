@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="banner">
+        <nav>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner-content" style="margin-top: 80px;">
+            <h1>IT Company</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYlFAJb-j9S9zSW0_bfGMKrWga-ca57TpfHA&s" alt="IT company">
+            <p style="text-align: center;">Leading Innovations in Technology</p>
+        </div>
+    </header>
+
+    <section id="home-section" class="segment">
+        <div class="wrapper">
+            <h2>Welcome to IT Company</h2>
+            <p text-align="center">IT company provides top-of-the-line IT solutions for businesses of all sizes. Our team of experts is dedicated to delivering innovative and reliable services to help your business thrive in the digital age.</p>
+        </div>
+    </section>
+
+    <section id="about-section" class="segment">
+        <div class="wrapper">
+            <h2>About Us</h2>
+            <p> IT Company, established in 2005, is a leading provider of technology solutions. We specialize in software development, IT consulting, and data analytics. Our mission is to empower businesses through cutting-edge technology and personalized service.</p>
+        </div>
+    </section>
+
+    <section id="services-section" class="segment">
+        <div class="wrapper">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Software Development</li>
+                <li>IT Consulting</li>
+                <li>Data Analytics</li>
+                <li>Cloud Solutions</li>
+                <li>Cybersecurity</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio-section" class="segment">
+        <div class="wrapper">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfC5J18Kr9FOLAAJLdjHMaO4_NaBdvyAPxB_pX75K9uigIaHFTQlOAMGntNg&s" alt="Project 2">
+                    <p>Project 1: Cloud Migration Service</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nReWD623WyPkl2cNnDZ2DyxDFMz0iJIEXCGD9hYch3hETBJLG-78YSgAEA&s" alt="Project 3">
+                    <p>Project 2: Cybersecurity Implementation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="segment">
+        <div class="wrapper">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="customer-name">Name:</label>
+                <input type="text" id="customer-name" name="customer-name">
+                
+                <label for="customer-email">Email:</label>
+                <input type="email" id="customer-email" name="customer-email">
+
+                <label for="customer-message">Message:</label>
+                <textarea id="customer-message" name="customer-message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <p>&copy; Our IT Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript for smooth scrolling for older browsers -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
