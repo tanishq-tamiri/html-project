@@ -158,6 +158,9 @@ footer div p {
 }
 .segment {
     text-align: center;
+    color: gray;
+    width: 50%;
+    margin: auto;
 }
 .wrapper {
     text-align: center;
